@@ -5,7 +5,7 @@ import { DinosaurModel } from "./types.ts";
 import { startStandaloneServer } from "@apollo/server/standalone";
 import { resolvers } from "./resolvers.ts";
 
-const MONGO_URL = Deno.env.get("MONGO_URL");
+const MONGO_URL = Deno.env.get("N_MONGO");
 
 if (!MONGO_URL) {
   throw new Error("Please provide a MONGO_URL");
